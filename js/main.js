@@ -41,33 +41,48 @@
 //   console.log(`${hp} HP left!`);
 //   hp -= 20;
 // }
-let hp = -50;
-do {
-  console.log(`${hp} HP left!`);
-  hp -= 20;
-} while (hp > 0);
+// let hp = -50;
+// do {
+//   console.log(`${hp} HP left!`);
+//   hp -= 20;
+// } while (hp > 0);
 
-for (let i = 0; i <= 10; i++) {
-  //   if (i === 4) {
-  //     continue;
-  //   }
-  //   if (i % 3 === 0) {
-  //     continue;
-  //   }
-  if (i === 4) {
-    break;
-  }
-  console.log(i);
-}
+// for (let i = 0; i <= 10; i++) {
+//   if (i === 4) {
+//     continue;
+//   }
+//   if (i % 3 === 0) {
+//     continue;
+//   }
+//   if (i === 4) {
+//     break;
+//   }
+//   console.log(i);
+// }
 
-function showAd(message = "Ad") {
-  console.log("-------------------------");
-  console.log(`-----------${message}------------`);
-  console.log("-------------------------");
-}
+// function showAd(message = "Ad") {
+//   console.log("-------------------------");
+//   console.log(`-----------${message}------------`);
+//   console.log("-------------------------");
+// }
 
-console.log("a");
-showAd();
-console.log("b");
-showAd("middle Ad");
-console.log("c");
+// console.log("a");
+// showAd();
+// console.log("b");
+// showAd("middle Ad");
+// console.log("c");
+
+// function sum(a, b, c) {
+//   return a + b + c;
+// }
+// const sum = function (a, b, c) {
+//   return a + b + c;
+// };
+// const sum = (a, b, c) => {
+//   return a + b + c;
+// };
+// const total = sum(1, 2, 3) + sum(3, 4, 5);
+// console.log(total);
+
+const double = (a) => a * 2;
+console.log(double(12));
