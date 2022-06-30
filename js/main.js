@@ -84,5 +84,25 @@
 // const total = sum(1, 2, 3) + sum(3, 4, 5);
 // console.log(total);
 
-const double = (a) => a * 2;
-console.log(double(12));
+// const double = (a) => a * 2;
+// console.log(double(12));
+
+{
+  //   const scores = [80, 90, 40, 70];
+  //   scores.splice(1, 1, 50, 40);
+  //   for (let i = 0; i < scores.length; i++) {
+  //     console.log(`Score ${i}: ${scores[i]}`);
+  //   }
+  //   scores.push(60, 50);
+  //   scores.shift();
+  //   console.log(scores);
+
+  const otherScores = [10, 20];
+  const scores = [80, 40, ...otherScores];
+  //   console.log(scores);
+  function sum(a, b) {
+    console.log(a + b);
+  }
+  sum(1, 2);
+  sum(...otherScores);
+}
