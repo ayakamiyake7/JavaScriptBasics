@@ -97,12 +97,29 @@
   //   scores.shift();
   //   console.log(scores);
 
-  const otherScores = [10, 20];
-  const scores = [80, 40, ...otherScores];
-  //   console.log(scores);
-  function sum(a, b) {
-    console.log(a + b);
-  }
-  sum(1, 2);
-  sum(...otherScores);
+  //   const otherScores = [10, 20];
+  //   const scores = [80, 40, ...otherScores];
+  //   //   console.log(scores);
+  //   function sum(a, b) {
+  //     console.log(a + b);
+  //   }
+  //   sum(1, 2);
+  //   sum(...otherScores);
+
+  //   const scores = [80, 90, 40, 70];
+  //   const [a, b, c, d] = scores;
+  //   console.log(a);
+  //   console.log(b);
+  //   const [a, b, ...others] = scores;
+  //   console.log(a);
+  //   console.log(others);
+
+  //   let x = 30;
+  //   let y = 70;
+  //   [x, y] = [y, x];
+  //   console.log("x=", x);
+  //   console.log("y=", y);
+
+  const scores = [80, 90, 40, 70];
+  scores.forEach((score, i) => console.log(`Score${i + 1} : ${score}`));
 }
