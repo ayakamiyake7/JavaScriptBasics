@@ -120,6 +120,32 @@
   //   console.log("x=", x);
   //   console.log("y=", y);
 
-  const scores = [80, 90, 40, 70];
-  scores.forEach((score, i) => console.log(`Score${i + 1} : ${score}`));
+  //   const scores = [80, 90, 40, 70];
+  //   scores.forEach((score, i) => console.log(`Score${i + 1} : ${score}`));
+
+  //   const prices = [180, 190, 200];
+  //   const updatePrices = prices.map((price) => price + 20);
+  //   console.log(updatePrices);
+
+  //   const numbers = [2, 4, 5, 6];
+  //   const evenNumbers = numbers.filter((number) => {
+  //     return number % 2 === 0;
+  //   });
+  //   console.log(evenNumbers);
+
+  //   point.z = 200;
+  //   delete point["y"];
+  //   const otherProps = { r: 4, color: "red" };
+  //   const point = { x: 100, y: 180, ...otherProps };
+  //   //   console.log(point);
+  //   const { x, r, ...others } = point;
+  //   console.log(x); //100
+  //   console.log(r); //4
+  //   console.log(others); //color:"red",y:180
+
+  const point = { x: 100, y: 180 };
+  const keys = Object.keys(point);
+  keys.forEach((key) => {
+    console.log(`Key: ${key}`);
+  });
 }
