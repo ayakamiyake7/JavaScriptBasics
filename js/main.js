@@ -149,10 +149,20 @@
   //     console.log(`Key: ${key} Value: ${point[key]}`);
   //   });
 
-  const points = [
-    { x: 30, y: 20 },
-    { x: 10, y: 50 },
-    { x: 40, y: 40 },
-  ];
-  console.log(points[1]["y"]);
+  // const points = [
+  //   { x: 30, y: 20 },
+  //   { x: 10, y: 50 },
+  //   { x: 40, y: 40 },
+  // ];
+  // console.log(points[1]["y"]);
+
+  // let x = [1, 2];
+  // let y = x;
+  // let y = [...x];
+  //   x[0] = 5;
+  //   console.log(x);
+  //   console.log(y);
+
+  const str = "hello";
+  console.log(str.substring(4, 6));
 }
