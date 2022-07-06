@@ -231,60 +231,60 @@
   // }
   // console.log("Finished!");
 
-  class Post {
-    //?
-    constructor(text) {
-      this.text = text;
-      this.likeCount = 0;
-    }
+  // class Post {
+  //   //?
+  //   constructor(text) {
+  //     this.text = text;
+  //     this.likeCount = 0;
+  //   }
 
-    show() {
-      console.log(`${this.text} - ${this.likeCount} likes`);
-    }
+  //   show() {
+  //     console.log(`${this.text} - ${this.likeCount} likes`);
+  //   }
 
-    like() {
-      this.likeCount++;
-      this.show();
-    }
+  //   like() {
+  //     this.likeCount++;
+  //     this.show();
+  //   }
 
-    static showInfo() {
-      console.log("Post Info");
-    }
-  }
-  class SponsoredPost extends Post {
-    constructor(text, sponsor) {
-      super(text);
-      this.sponsor = sponsor;
-    }
+  //   static showInfo() {
+  //     console.log("Post Info");
+  //   }
+  // }
+  // class SponsoredPost extends Post {
+  //   constructor(text, sponsor) {
+  //     super(text);
+  //     this.sponsor = sponsor;
+  //   }
 
-    show() {
-      super.show();
-      console.log(`... sponsored by ${this.sponsor}`);
-    }
+  //   show() {
+  //     super.show();
+  //     console.log(`... sponsored by ${this.sponsor}`);
+  //   }
 
-    static showInfo() {
-      console.log("Post Info");
-    }
-  }
-  const posts = [
-    new Post("Studying JavaScript..."),
-    new Post("Enjoy JavaScript"),
-    new SponsoredPost("3 minutes movies", "dot install"),
-    // {
-    //   text: "Studying JavaScript...",
-    //   likeCount: 0,
-    //   show() {
-    //     console.log(`${this.text} - ${this.likeCount}`);
-    //   },
-    // },
-    // {
-    //   text: "Enjoy JavaScript",
-    //   likeCount: 0,
-    //   show() {
-    //     console.log(`${this.text} - ${this.likeCount}`);
-    //   },
-    // },
-  ];
+  //   static showInfo() {
+  //     console.log("Post Info");
+  //   }
+  // }
+  // const posts = [
+  //   new Post("Studying JavaScript..."),
+  //   new Post("Enjoy JavaScript"),
+  //   new SponsoredPost("3 minutes movies", "dot install"),
+  // {
+  //   text: "Studying JavaScript...",
+  //   likeCount: 0,
+  //   show() {
+  //     console.log(`${this.text} - ${this.likeCount}`);
+  //   },
+  // },
+  // {
+  //   text: "Enjoy JavaScript",
+  //   likeCount: 0,
+  //   show() {
+  //     console.log(`${this.text} - ${this.likeCount}`);
+  //   },
+  // },
+  // ];
 
   // posts[0].like();
   // posts[0].like();
@@ -292,6 +292,110 @@
   // posts[0].show();
   // posts[1].show();
   // Post.showInfo();
-  posts[2].show();
-  posts[2].like();
+  // posts[2].show();
+  // posts[2].like();
+
+  // ****************************************************************
+  //DOM
+  // function update() {
+  // document.querySelector("#heading").textContent = "Morning!";
+  // document.querySelectorAll("p")[1].textContent = "Changed!";
+  //   document
+  //     .querySelectorAll("p")
+  //     .forEach((p, index) => (p.textContent = `${index + 1}: p`));
+  // }
+  // setTimeout(update, 1000);
+
+  // document.querySelector("button").addEventListener("click", () => {
+  //   const targetNode = document.querySelector("#target");
+  // targetNode.title = "This is title!";
+  // targetNode.style.color = "skyblue";
+  // targetNode.classList.add("my-color");
+  // if (targetNode.classList.contains("my-color") === true) {
+  //   targetNode.classList.remove("my-color");
+  // } else {
+  //   targetNode.classList.add("my-color");
+  // }
+  // targetNode.classList.toggle("my-color");
+
+  // targetNode.textContent = "Dotinstall";
+  // targetNode.textContent = targetNode.dataset.translation;
+  // });
+
+  // document.querySelector("button").addEventListener("click", () => {
+  // const item2 = document.createElement("li");
+  // const ul = document.querySelector("ul");
+  // item2.textContent = "item 2";
+  // ul.appendChild(item2);
+
+  // const item0 = document.querySelectorAll("li")[0];
+  // const copy = item0.cloneNode(true);
+  // console.log(copy);
+  // const ul = document.querySelector("ul");
+  // const item2 = document.querySelectorAll("li")[2];
+  // ul.insertBefore(copy, item2);
+
+  // const item1 = document.querySelectorAll("li")[1];
+  // item1.remove();
+  // ul.removeChild(item1);
+
+  // const li = document.createElement("li");
+  // const text = document.querySelector("input");
+  // li.textContent = text.value;
+  // console.log(text.value);
+  // ul.appendChild(li);
+  // text.value = "";
+  // text.focus();
+  // });
+
+  // const button = document.querySelector("button");
+  // button.addEventListener("click", () => {
+  //   const ul = document.querySelector("ul");
+  //   const li = document.createElement("li");
+  //   const select = document.querySelector("select");
+
+  //   li.textContent = select.value;
+  //   console.log(select.value);
+  //   ul.appendChild(li);
+  // });
+  // const button = document.querySelector("button");
+  // button.addEventListener("click", () => {
+  //   const ul = document.querySelector("ul");
+  //   const li = document.createElement("li");
+  //   const colors = document.querySelectorAll("input");
+  //   let selectedColor;
+  //   console.log(selectedColor);
+
+  //   colors.forEach((color) => {
+  //     if (color.checked === true) {
+  //       selectedColor = color.value;
+  //       console.log(selectedColor);
+  //     }
+  //   });
+
+  //   if (typeof selectedColor === "undefined") {
+  //     alert("Please select a color!");
+  //     return;
+  //   }
+
+  //   ul.appendChild(li);
+  //   li.textContent = selectedColor;
+  // console.log(selectedColor);
+  // });
+
+  document.querySelector("button").addEventListener("click", () => {
+    const colors = document.querySelectorAll("input");
+    let selectedColor = [];
+
+    colors.forEach((color) => {
+      if (color.checked === true) {
+        selectedColor.push(color.value);
+      }
+    });
+
+    const li = document.createElement("li");
+    li.textContent = selectedColor;
+    console.log(li);
+    document.querySelector("ul").appendChild(li);
+  });
 }
