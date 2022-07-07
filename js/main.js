@@ -383,19 +383,58 @@
   // console.log(selectedColor);
   // });
 
-  document.querySelector("button").addEventListener("click", () => {
-    const colors = document.querySelectorAll("input");
-    let selectedColor = [];
+  // document.querySelector("button").addEventListener("click", () => {
+  //   const colors = document.querySelectorAll("input");
+  //   let selectedColor = [];
 
-    colors.forEach((color) => {
-      if (color.checked === true) {
-        selectedColor.push(color.value);
-      }
-    });
+  //   colors.forEach((color) => {
+  //     if (color.checked === true) {
+  //       selectedColor.push(color.value);
+  //     }
+  //   });
 
-    const li = document.createElement("li");
-    li.textContent = selectedColor;
-    console.log(li);
-    document.querySelector("ul").appendChild(li);
+  //   const li = document.createElement("li");
+  //   li.textContent = selectedColor;
+  //   console.log(li);
+  //   document.querySelector("ul").appendChild(li);
+  // });
+  // document.querySelector("button").addEventListener("dblclick", () => {
+  //   console.log("click");
+  // });
+  // document.addEventListener("mousemove", (e) => {
+  //   // console.log("mouseover");
+  //   console.log(e.clientX, e.clientY);
+  // });
+
+  // document.addEventListener("keydown", (e) => {
+  //   console.log(e.key);
+  // });
+
+  // const text = document.querySelector("textarea");
+  // text.addEventListener("focus", () => {
+  //   console.log("focus");
+  // });
+  // text.addEventListener("blur", () => {
+  //   console.log("blur");
+  // });
+  // const text = document.querySelector("textarea");
+  // text.addEventListener("input", () => {
+  //   console.log(text.value);
+  // });
+  // text.addEventListener("change", () => {
+  //   console.log("change");
+  // });
+
+  // document.querySelector("form").addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //   console.log("Posted");
+  //   document.querySelector("input").value = "";
+  // });
+
+  document.querySelector("ul").addEventListener("click", (e) => {
+    console.log(e.target);
+    // if (e.target.nodeName === "LI") {
+    //   e.target.classList.toggle("done");
+    // }
   });
 }
