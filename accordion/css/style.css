@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 18px;
+  border-bottom: 1px solid;
+  padding: 8px 16px;
+  margin: 0 0 16px;
+}
+
+dt {
+  margin: 0;
+  padding: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+dt::before {
+  content: "Q. ";
+}
+
+dt::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+div.show dt::after {
+  transform: rotate(45deg);
+}
+
+dd {
+  margin: 0;
+  padding: 8px;
+  /* display: none; */
+  /* opacity: 0; */
+  /* transform: translateY(-16px);
+  transition: 0.1s; */
+  /* pointer-events: none; */
+  display: none;
+}
+
+dd::before {
+  content: "A. ";
+}
+
+div.show dd {
+  /* display: block; */
+  /* opacity: 1; */
+  /* transform: none; */
+  display: block;
+  animation: 0.3s fadeIn;
+}
+
+dl > div {
+  margin: 0 0 16px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+}
