@@ -88,58 +88,64 @@
 // console.log(double(12));
 
 {
-  //   const scores = [80, 90, 40, 70];
-  //   scores.splice(1, 1, 50, 40);
-  //   for (let i = 0; i < scores.length; i++) {
-  //     console.log(`Score ${i}: ${scores[i]}`);
-  //   }
-  //   scores.push(60, 50);
-  //   scores.shift();
-  //   console.log(scores);
-  //   const otherScores = [10, 20];
-  //   const scores = [80, 40, ...otherScores];
-  //   //   console.log(scores);
-  //   function sum(a, b) {
-  //     console.log(a + b);
-  //   }
-  //   sum(1, 2);
-  //   sum(...otherScores);
-  //   const scores = [80, 90, 40, 70];
-  //   const [a, b, c, d] = scores;
-  //   console.log(a);
-  //   console.log(b);
-  //   const [a, b, ...others] = scores;
-  //   console.log(a);
-  //   console.log(others);
-  //   let x = 30;
-  //   let y = 70;
-  //   [x, y] = [y, x];
-  //   console.log("x=", x);
-  //   console.log("y=", y);
-  //   const scores = [80, 90, 40, 70];
-  //   scores.forEach((score, i) => console.log(`Score${i + 1} : ${score}`));
+  //! splice, push, shift
+  // const scores = [80, 90, 40, 70];
+  // scores.push(60, 50);
+  // scores.shift();
+  // console.log(scores);
+  // scores.splice(1, 1, 50, 40); //80,50,40,40,70
+  //! for
+  // for (let i = 0; i < scores.length; i++) {
+  //   console.log(`Score ${i}: ${scores[i]}`);
+  // }
+  //! spread syntax
+  // const otherScores = [10, 20];
+  // const scores = [80, 40, ...otherScores];
+  // console.log(scores);
+  // function sum(a, b) {
+  //   console.log(a + b);
+  // }
+  // sum(1, 2);
+  // sum(...otherScores);
+  //! Destructuring assignment 分割代入
+  // const scores = [80, 90, 40, 70];
+  // const [a, b, c, d] = scores;
+  // console.log(a);
+  // console.log(b);
+  // const [a, b, ...others] = scores;
+  // console.log(a);
+  // console.log(others);
+  // let x = 30;
+  // let y = 70;
+  // [x, y] = [y, x];
+  // console.log("x=", x);
+  // console.log("y=", y);
+  // const scores = [80, 90, 40, 70];
+  //! forEach, map, filter
+  // scores.forEach((score, i) => console.log(`Score${i + 1} : ${score}`));
   //   const prices = [180, 190, 200];
   //   const updatePrices = prices.map((price) => price + 20);
   //   console.log(updatePrices);
-  //   const numbers = [2, 4, 5, 6];
-  //   const evenNumbers = numbers.filter((number) => {
-  //     return number % 2 === 0;
-  //   });
-  //   console.log(evenNumbers);
-  //   point.z = 200;
-  //   delete point["y"];
-  //   const otherProps = { r: 4, color: "red" };
-  //   const point = { x: 100, y: 180, ...otherProps };
-  //   //   console.log(point);
-  //   const { x, r, ...others } = point;
-  //   console.log(x); //100
-  //   console.log(r); //4
-  //   console.log(others); //color:"red",y:180
-  //   const point = { x: 100, y: 180 };
-  //   const keys = Object.keys(point);//?
-  //   keys.forEach((key) => {
-  //     console.log(`Key: ${key} Value: ${point[key]}`);
-  //   });
+  // const numbers = [2, 4, 5, 6];
+  // const evenNumbers = numbers.filter((number) => {
+  //   return number % 2 === 0;
+  // });
+  // console.log(evenNumbers);
+  // const otherProps = { r: 4, color: "red" };
+  // const point = { x: 100, y: 180, ...otherProps };
+  // point.z = 200;
+  // delete point["y"];
+  // console.log(point);
+  // const { x, r, ...others } = point;
+  // console.log(x); //100
+  // console.log(r); //4
+  // console.log(others); //color:"red",y:180
+  // const point = { x: 100, y: 180 };
+  //! Object.keys
+  // const keys = Object.keys(point); //?
+  // keys.forEach((key) => {
+  //   console.log(`Key: ${key} Value: ${point[key]}`);
+  // });
   // const points = [
   //   { x: 30, y: 20 },
   //   { x: 10, y: 50 },
@@ -152,48 +158,45 @@
   //   x[0] = 5;
   //   console.log(x);
   //   console.log(y);
+  //! substring
   // const str = "hello";
   // console.log(str.substring(4, 6));
-
+  //! join
   // const d = [2000, 9, 1];
-  // console.log(d.join(" "));
-
+  // console.log(d.join("/"));
+  //! split
   // const t = "17:10:45";
   // console.log(t.split(":"));
-  // const [hour, minute, second] = t.split(":");//?
+  // const [hour, minute, second] = t.split(":"); //?
   // console.log(hour);
   // console.log(minute);
   // console.log(second);
-
-  const scores = [10, 3, 9];
-  let sum = 0;
-
+  //! forEach, Math
+  // const scores = [10, 3, 9];
+  // let sum = 0;
   // scores.forEach((score) => {
   //   sum = sum + score;
   // });
-
   // const average = sum / scores.length;
   // console.log(Math.floor(average));
   // console.log(Math.random());
-
   // for (let i = 0; i < scores.length; i++) {
   //   sum = sum + scores[i];
   // }
   // console.log(sum);
-
+  //! Math
   // console.log(Math.floor(Math.random() * 6) + 1);
   // console.log(Math.floor(Math.random() * 7) + 4);
-
+  //! new Date
   // const d = new Date();
   // console.log(d.getMonth() + 1);
   // console.log(`${d.getFullYear()} / ${d.getMonth() + 1} / ${d.getDate()}`);
-
   // const d = new Date(2019, 10);
   // d.setHours(10, 20, 30);
   // d.setDate(31);
   // d.setDate(d.getDate() + 3);
   // console.log(d);
-
+  //! confirm
   //   const answer = confirm("OK?");
   //   if (answer) {
   //     console.log("yes");
@@ -201,16 +204,16 @@
   //     console.log("No");
   //   }
 
-  // let i = 0;
-  // function showTime() {
-  //   console.log(new Date());
-  //   i++;//? setInterval
-  //   if (i > 2) {
-  //     clearInterval(intervalId);
-  //   }
-  // }
-  // const intervalId = setInterval(showTime, 1000);
-
+  //! setInterval, clearInterval
+  let i = 0;
+  function showTime() {
+    console.log(new Date());
+    i++; //? setInterval
+    if (i > 2) {
+      clearInterval(intervalId);
+    }
+  }
+  const intervalId = setInterval(showTime, 1000);
   // let i = 0;
   // function showTime() {
   //   console.log(new Date());
@@ -221,8 +224,9 @@
   //     clearTimeout(timeOutId);
   //   }
   // }
-  // showTime();
+  showTime();
 
+  //! try catch
   // const name = 5;
   // try {
   //   console.log(name.toUpperCase());
@@ -230,23 +234,19 @@
   //   console.log(e);
   // }
   // console.log("Finished!");
-
   // class Post {
   //   //?
   //   constructor(text) {
   //     this.text = text;
   //     this.likeCount = 0;
   //   }
-
   //   show() {
   //     console.log(`${this.text} - ${this.likeCount} likes`);
   //   }
-
   //   like() {
   //     this.likeCount++;
   //     this.show();
   //   }
-
   //   static showInfo() {
   //     console.log("Post Info");
   //   }
@@ -256,12 +256,10 @@
   //     super(text);
   //     this.sponsor = sponsor;
   //   }
-
   //   show() {
   //     super.show();
   //     console.log(`... sponsored by ${this.sponsor}`);
   //   }
-
   //   static showInfo() {
   //     console.log("Post Info");
   //   }
@@ -285,7 +283,6 @@
   //   },
   // },
   // ];
-
   // posts[0].like();
   // posts[0].like();
   // show(posts[0]);
@@ -294,7 +291,6 @@
   // Post.showInfo();
   // posts[2].show();
   // posts[2].like();
-
   // ****************************************************************
   //DOM
   // function update() {
@@ -305,7 +301,6 @@
   //     .forEach((p, index) => (p.textContent = `${index + 1}: p`));
   // }
   // setTimeout(update, 1000);
-
   // document.querySelector("button").addEventListener("click", () => {
   //   const targetNode = document.querySelector("#target");
   // targetNode.title = "This is title!";
@@ -317,28 +312,23 @@
   //   targetNode.classList.add("my-color");
   // }
   // targetNode.classList.toggle("my-color");
-
   // targetNode.textContent = "Dotinstall";
   // targetNode.textContent = targetNode.dataset.translation;
   // });
-
   // document.querySelector("button").addEventListener("click", () => {
   // const item2 = document.createElement("li");
   // const ul = document.querySelector("ul");
   // item2.textContent = "item 2";
   // ul.appendChild(item2);
-
   // const item0 = document.querySelectorAll("li")[0];
   // const copy = item0.cloneNode(true);
   // console.log(copy);
   // const ul = document.querySelector("ul");
   // const item2 = document.querySelectorAll("li")[2];
   // ul.insertBefore(copy, item2);
-
   // const item1 = document.querySelectorAll("li")[1];
   // item1.remove();
   // ul.removeChild(item1);
-
   // const li = document.createElement("li");
   // const text = document.querySelector("input");
   // li.textContent = text.value;
@@ -347,13 +337,11 @@
   // text.value = "";
   // text.focus();
   // });
-
   // const button = document.querySelector("button");
   // button.addEventListener("click", () => {
   //   const ul = document.querySelector("ul");
   //   const li = document.createElement("li");
   //   const select = document.querySelector("select");
-
   //   li.textContent = select.value;
   //   console.log(select.value);
   //   ul.appendChild(li);
@@ -365,34 +353,28 @@
   //   const colors = document.querySelectorAll("input");
   //   let selectedColor;
   //   console.log(selectedColor);
-
   //   colors.forEach((color) => {
   //     if (color.checked === true) {
   //       selectedColor = color.value;
   //       console.log(selectedColor);
   //     }
   //   });
-
   //   if (typeof selectedColor === "undefined") {
   //     alert("Please select a color!");
   //     return;
   //   }
-
   //   ul.appendChild(li);
   //   li.textContent = selectedColor;
   // console.log(selectedColor);
   // });
-
   // document.querySelector("button").addEventListener("click", () => {
   //   const colors = document.querySelectorAll("input");
   //   let selectedColor = [];
-
   //   colors.forEach((color) => {
   //     if (color.checked === true) {
   //       selectedColor.push(color.value);
   //     }
   //   });
-
   //   const li = document.createElement("li");
   //   li.textContent = selectedColor;
   //   console.log(li);
@@ -405,11 +387,9 @@
   //   // console.log("mouseover");
   //   console.log(e.clientX, e.clientY);
   // });
-
   // document.addEventListener("keydown", (e) => {
   //   console.log(e.key);
   // });
-
   // const text = document.querySelector("textarea");
   // text.addEventListener("focus", () => {
   //   console.log("focus");
@@ -424,13 +404,11 @@
   // text.addEventListener("change", () => {
   //   console.log("change");
   // });
-
   // document.querySelector("form").addEventListener("submit", (e) => {
   //   e.preventDefault();
   //   console.log("Posted");
   //   document.querySelector("input").value = "";
   // });
-
   // document.querySelector("ul").addEventListener("click", (e) => {
   //   console.log(e.target);
   // if (e.target.nodeName === "LI") {
