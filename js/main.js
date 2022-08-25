@@ -203,17 +203,16 @@
   //   } else {
   //     console.log("No");
   //   }
-
   //! setInterval, clearInterval
-  let i = 0;
-  function showTime() {
-    console.log(new Date());
-    i++; //? setInterval
-    if (i > 2) {
-      clearInterval(intervalId);
-    }
-  }
-  const intervalId = setInterval(showTime, 1000);
+  // let i = 0;
+  // function showTime() {
+  //   console.log(new Date());
+  //   i++; //? setInterval
+  //   if (i > 2) {
+  //     clearInterval(intervalId);
+  //   }
+  // }
+  // const intervalId = setInterval(showTime, 1000);
   // let i = 0;
   // function showTime() {
   //   console.log(new Date());
@@ -224,8 +223,7 @@
   //     clearTimeout(timeOutId);
   //   }
   // }
-  showTime();
-
+  // showTime();
   //! try catch
   // const name = 5;
   // try {
@@ -234,6 +232,7 @@
   //   console.log(e);
   // }
   // console.log("Finished!");
+  //! class constructor
   // class Post {
   //   //?
   //   constructor(text) {
@@ -251,6 +250,7 @@
   //     console.log("Post Info");
   //   }
   // }
+  //! class extends
   // class SponsoredPost extends Post {
   //   constructor(text, sponsor) {
   //     super(text);
@@ -267,7 +267,7 @@
   // const posts = [
   //   new Post("Studying JavaScript..."),
   //   new Post("Enjoy JavaScript"),
-  //   new SponsoredPost("3 minutes movies", "dot install"),
+  // new SponsoredPost("3 minutes movies", "dot install"),
   // {
   //   text: "Studying JavaScript...",
   //   likeCount: 0,
@@ -275,16 +275,16 @@
   //     console.log(`${this.text} - ${this.likeCount}`);
   //   },
   // },
-  // {
-  //   text: "Enjoy JavaScript",
-  //   likeCount: 0,
-  //   show() {
-  //     console.log(`${this.text} - ${this.likeCount}`);
+  //   {
+  //     text: "Enjoy JavaScript",
+  //     likeCount: 0,
+  //     show() {
+  //       console.log(`${this.text} - ${this.likeCount}`);
+  //     },
   //   },
-  // },
   // ];
   // posts[0].like();
-  // posts[0].like();
+  // posts[1].like();
   // show(posts[0]);
   // posts[0].show();
   // posts[1].show();
